@@ -141,6 +141,8 @@ fi
 if [ -n "$(ls -A "${PATH1}/diy" 2>/dev/null)" ]; then
 	cp -Rf "${PATH1}"/diy/* "${Home}"
 	echo -e " > 复制diy文件结束"
+	ls "${Home}"
+	ls "${Home}"/diy/package/lean/luci-theme-argon/htdocs/luci-static/argon/background/
 fi
 if [ -n "$(ls -A "${PATH1}/files" 2>/dev/null)" ]; then
 	cp -Rf "${PATH1}/files" "${Home}" && chmod -R +x ${Home}/files
